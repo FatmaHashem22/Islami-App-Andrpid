@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/sura_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sura_ayat_no"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        tools:text="Sura Name"
+        />
+    <TextView
+        android:id="@+id/sura_ayat_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/sura_name"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        tools:text="No of Ayat"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
