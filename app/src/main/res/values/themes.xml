@@ -4,7 +4,7 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/light_beige</item>
         <item name="colorPrimaryVariant">#AC8C5E</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/black</item>
         <item name="colorSecondaryVariant">@color/black</item>
@@ -18,5 +18,16 @@
 
     <style name="bottom_navigation_style" parent="Theme.Islami">
         <item name="backgroundTint">@color/light_beige</item>
+    </style>
+    
+    <style name="sura_content_style" parent="Theme.Islami">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="toolbar_title_style" parent="Theme.Islami">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="border_style" parent="Theme.Islami">
+        <item name="android:background">@color/light_beige</item>
     </style>
 </resources>

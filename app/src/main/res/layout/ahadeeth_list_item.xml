@@ -6,15 +6,18 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
-        android:id="@+id/sura_line_text"
+        android:id="@+id/hadeeth_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        style="@style/sura_content_style"
-        android:padding="8dp"
-        android:textSize="20sp"
-        tools:text="Hello World"
+        style="@style/toolbar_title_style"
+        tools:text="Hadeeth"
+        android:textSize="24sp"
+        android:layout_marginVertical="3dp"
+        android:textStyle="bold"
+
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

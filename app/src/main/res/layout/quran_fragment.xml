@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".main_fragments.QuranFragment"
-    android:background="@drawable/islami_bg_light">
+    android:background="@drawable/islami_bg">
 
     <TextView
         android:id="@+id/islami_text"
@@ -15,9 +15,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="@string/islami"
-        android:textSize="24sp"
-        android:textColor="@color/black"
-        android:layout_marginTop="16dp"
+        android:textSize="36sp"
+        style="@style/toolbar_title_style"
+        android:textStyle="bold"
         />
 
     <ImageView
@@ -36,9 +36,8 @@
         android:id="@+id/quran_border_top"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/light_beige"
+        style="@style/border_style"
         app:layout_constraintTop_toBottomOf="@id/islami_icon"
-
         />
 
     <TextView
@@ -48,29 +47,31 @@
         app:layout_constraintTop_toBottomOf="@id/quran_border_top"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/ayat_title_bar"
-        android:text="Sura Name"
+        android:text="@string/sura_name"
+        style="@style/toolbar_title_style"
         android:layout_marginHorizontal="4dp"
         android:textSize="26sp"
-        android:textColor="@color/black"
+        android:textStyle="bold"
         />
     <TextView
+        style="@style/toolbar_title_style"
         android:id="@+id/ayat_title_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/quran_border_top"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="No. of Ayat"
+        android:text="@string/no_of_ayat"
         app:layout_constraintStart_toEndOf="@id/sura_title_bar"
         android:layout_marginHorizontal="4dp"
         android:textSize="26sp"
-        android:textColor="@color/black"
+        android:textStyle="bold"
         />
 
     <View
         android:id="@+id/quran_border_bottom"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/light_beige"
+        style="@style/border_style"
         app:layout_constraintTop_toBottomOf="@id/sura_title_bar"
 
         />
@@ -78,7 +79,7 @@
         android:id="@+id/quran_border_middle"
         android:layout_width="2dp"
         android:layout_height="0dp"
-        android:background="@color/light_beige"
+        style="@style/border_style"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/quran_border_top"

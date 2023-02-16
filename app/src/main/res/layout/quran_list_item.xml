@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/toolbar_title_style">
 
     <TextView
         android:id="@+id/sura_name"
@@ -14,8 +15,8 @@
         app:layout_constraintEnd_toStartOf="@id/sura_ayat_no"
         android:textSize="24sp"
         android:gravity="center"
-        android:textColor="@color/black"
         tools:text="Sura Name"
+        android:textStyle="bold"
         />
     <TextView
         android:id="@+id/sura_ayat_no"
@@ -26,8 +27,8 @@
         app:layout_constraintStart_toEndOf="@id/sura_name"
         android:textSize="24sp"
         android:gravity="center"
-        android:textColor="@color/black"
         tools:text="No of Ayat"
+        android:textStyle="bold"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

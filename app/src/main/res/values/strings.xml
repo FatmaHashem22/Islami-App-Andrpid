@@ -5,4 +5,7 @@
     <string name="tasbeeh">Tasbeeh</string>
     <string name="radio">Radio</string>
     <string name="islami">Islami</string>
+    <string name="sura_name">Sura Name</string>
+    <string name="no_of_ayat">No. of Ayat</string>
+    <string name="verses">Verses</string>
 </resources>
